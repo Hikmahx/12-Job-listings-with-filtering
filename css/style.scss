@@ -1,0 +1,30 @@
+/* MOBILE FIRST */ 
+
+// variables
+$dark-cyan: rgb(91, 164, 164);
+$grayish-cyan-bg: rgb(239, 250, 250);
+$grayish-cyan-tab: rgb(238, 246, 246);
+$dark-grayish-cyan: rgb(123, 142, 142);
+$very-dark-grayish-cyan: rgb(44, 58, 58);
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Spartan', sans-serif;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
