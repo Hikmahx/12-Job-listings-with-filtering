@@ -22,4 +22,9 @@ header .mobile {
 header .desktop {
   display: none;
 }
+
+main {
+  height: 100vh;
+  background: #effafa;
+}
 /*# sourceMappingURL=style.css.map */
