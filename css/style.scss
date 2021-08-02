@@ -30,6 +30,7 @@ html{
 
 
 header{
+  height: 27vh;
   .mobile{
     width: 100%;
     background: $dark-cyan;
@@ -41,6 +42,126 @@ header{
 }
 
 main{
-  height: 100vh;
+  height: 200vh;
   background: $grayish-cyan-bg;
+
+  ul.jobs{
+    padding: 6.1rem 2.4rem 0 2.4rem;
+    
+    li.job{
+      background: #fff;
+      padding: 1.9rem 2.4rem;
+      margin-bottom: 4rem;
+      position: relative;
+      height: 25.7rem;
+      border-radius: 0.5rem;
+      box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
+
+      /*for featured*/ 
+      // &::before{
+      //   content: '';
+      //   position: absolute;
+      //   width: 0.5rem;
+      //   height: 100%;
+      //   background: #5ea4a6;
+      //   top: 0;
+      //   left: 0;
+      //   border-radius: 0.5rem 0 0 0.5rem;
+      // }
+
+      img{
+        position: relative;
+        // transform: scale(0.5);
+        width: 4.8rem;
+        height: 4.8rem;
+        // top: -4.8rem;
+        top: -4.4rem;
+        margin-bottom: -4rem;
+        // left: 1.9rem;
+      }
+
+      .company{
+        @include flexCenter(row);
+        justify-content: left;
+        // margin-top: -0.45rem;
+        // margin-top: 0.02rem;
+
+        h4{
+          color: $dark-cyan;
+          font-size: 1.3rem;
+          margin-right: 1.35rem;
+        }
+
+        span{
+          margin: 0 0.4rem;
+          text-transform: uppercase;
+          color: #fff;
+          padding: 0.4rem 0.8rem 0;
+          border-radius: 3rem;
+          height: 2.4rem;
+          @include flexCenter(row);
+          font-weight: 700;
+          font-size: 1.1rem;
+        }
+
+        .cyan{
+          background: $dark-cyan;
+        }
+
+        .black{
+          background: $very-dark-grayish-cyan;
+        }
+      }
+
+      h2{
+        margin-top: 1.2rem;
+      }
+
+      .details{
+        margin-top: 1.6rem;
+        padding-bottom: 1.85rem;
+        border-bottom: rgb(192, 194, 193) 0.1rem solid;
+
+        span{
+          color: $dark-grayish-cyan;
+          font-size: 1.3rem;
+          margin-right: 1.7rem;
+          position: relative;
+
+          &:not(:last-child){
+
+            &::after{
+              content: '.';
+              margin-left: 0.4rem;
+              font-size: 3rem;
+              position: absolute;
+              top: -1.9rem;
+              filter: blur(0.06rem);
+              opacity: 0.7;
+              // left: 4rem;
+              // bottom: 0;
+            }
+          }
+        }
+      }
+
+      .filter{
+        margin-top: 1.6rem;
+        button{
+          margin-bottom: 1.6rem;
+          margin-right: 1.4rem;
+          padding: 1rem 0.8rem;
+          border: none;
+          background: $grayish-cyan-tab;
+          font-family: 'Spartan', sans-serif;
+          font-weight: 700;
+          color: $dark-cyan;
+          height: 3.2rem;
+          text-align: center;
+          letter-spacing: -0.2px;
+          border-radius: 0.3rem;
+        }
+      }
+    }
+  }
 }
