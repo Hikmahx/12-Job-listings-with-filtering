@@ -2,7 +2,8 @@ fetch('./data.json')
 .then(response=>{return response.json()})
 .then(datas=>{datas.forEach(data => {
 
-  let jobList = document.querySelector('.jobs');  
+  let jobList = document.querySelector('.jobs');
+    
 
   // CODE FOR JOB LI
 
@@ -11,9 +12,9 @@ fetch('./data.json')
   <li class="job">
   <img src="./${data.logo}" alt="banner">
   <div class="company">
-    <h4>${data.company}</h4>
-    <span>${data.new}</span>
-    <span>${data.featured}</span>
+  <h4>${data.company}</h4>
+  <span class=${data.new === true? 'cyan': ''}>${data.new === true? 'New!': ''}</span>
+  <span class=${data.featured === true? 'black': ''}>${data.featured === true? 'Featured': ''}</span>
   </div>
   <h2>${data.position}</h2>
   <div class="details">
