@@ -28,12 +28,11 @@ header .desktop {
 }
 
 main {
-  height: 200vh;
   background: #effafa;
 }
 
 main ul.jobs {
-  padding: 6.1rem 2.4rem 0 2.4rem;
+  padding: 6.1rem 2.4rem 0.01rem 2.4rem;
 }
 
 main ul.jobs li.job {
@@ -46,6 +45,10 @@ main ul.jobs li.job {
   -webkit-box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
           box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
   /*for featured*/
+}
+
+main ul.jobs li.job:last-child {
+  margin-bottom: 3.35rem;
 }
 
 main ul.jobs li.job img {
@@ -79,6 +82,7 @@ main ul.jobs li.job .company h4 {
   color: #5ba4a4;
   font-size: 1.3rem;
   margin-right: 1.35rem;
+  white-space: nowrap;
 }
 
 main ul.jobs li.job .company span {
@@ -143,6 +147,11 @@ main ul.jobs li.job .details span:not(:last-child)::after {
 
 main ul.jobs li.job .filter {
   margin-top: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main ul.jobs li.job .filter button {
@@ -156,7 +165,7 @@ main ul.jobs li.job .filter button {
   color: #5ba4a4;
   height: 3.2rem;
   text-align: center;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.3px;
   border-radius: 0.3rem;
 }
 /*# sourceMappingURL=style.css.map */
