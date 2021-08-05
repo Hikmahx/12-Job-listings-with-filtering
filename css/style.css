@@ -44,11 +44,25 @@ main ul.jobs li.job {
   border-radius: 0.5rem;
   -webkit-box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
           box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
-  /*for featured*/
 }
 
 main ul.jobs li.job:last-child {
   margin-bottom: 3.35rem;
+}
+
+main ul.jobs li.job.cyan-border {
+  /*for featured*/
+}
+
+main ul.jobs li.job.cyan-border::before {
+  content: '';
+  position: absolute;
+  width: 0.5rem;
+  height: 100%;
+  background: #5ea4a6;
+  top: 0;
+  left: 0;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 main ul.jobs li.job img {
