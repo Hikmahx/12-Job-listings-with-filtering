@@ -9,7 +9,7 @@ fetch('./data.json')
 
   output = '';
   output += `
-  <li class="job">
+  <li class="job${data.featured  ===true? ' cyan-border': ''}">
   <img src="./${data.logo}" alt="banner">
   <div class="company">
   <h4>${data.company}</h4>
