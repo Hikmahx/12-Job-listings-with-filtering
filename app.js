@@ -23,17 +23,34 @@ fetch('./data.json')
     <span>${data.location}</span>
   </div>
   <div class="filter">
-  <button>${data.role}</button>
-  <button>${data.level}</button>
+  <button data-role= "${data.role}">${data.role}</button>
+  <button data-level= "${data.level}">${data.level}</button>
   ${data.languages.map(itemFxn).join('')}
   ${data.tools.map(itemFxn).join('')}
   </div>
   `;
 
   function itemFxn(item) {
-    return `<button>${item}</button>`
+    return `<button data-tools= ${item}>${item}</button>`;
   }
 
+
+  // console.log(Object.keys(data)[12])
+  // console.log(Object.prototype.hasOwnProperty())
+  
+  // Object.keys(data).forEach(key=>{
+    // })
+    
+    // for data-...
+    // ${itemFxn(data.languages, item).map(itemFxn).join('')}
+  keyFxn(data.languages)
+
+  function keyFxn(key) {
+    // return Object.keys(data)[Object.values(data).indexOf(key)];
+    // console.log(Object.keys(data)[Object.values(data).indexOf(key)]);
+  }
+  // console.log(buttons)
+  
   jobList.innerHTML += output;
 });})
 
