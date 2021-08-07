@@ -60,6 +60,7 @@ main .filter-container {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  display: none;
 }
 
 main .filter-container .selected-btn {

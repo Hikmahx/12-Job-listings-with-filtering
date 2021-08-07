@@ -56,6 +56,7 @@ main{
     flex-wrap: wrap;
     height: max-content;
     justify-content: left;
+    display: none;
 
     .selected-btn{
       width: fit-content;
