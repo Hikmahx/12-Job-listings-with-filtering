@@ -31,6 +31,87 @@ main {
   background: #effafa;
 }
 
+main .filter-container {
+  position: relative;
+  background: #fff;
+  padding: 2rem 1.9rem 0.4rem;
+  margin: -3.1rem 2.4rem -0.5rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 0rem 2rem 2rem -1rem #d7e9ec;
+          box-shadow: 0rem 2rem 2rem -1rem #d7e9ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+main .filter-container .selected-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 7rem;
+  overflow: hidden;
+}
+
+main .filter-container .selected-btn button {
+  margin: 0 1.4rem 1.6rem 0;
+  padding: 0 0 0 0.8rem;
+  border: none;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: #eef6f6;
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  color: #5ba4a4;
+  height: 3.2rem;
+  text-align: center;
+  letter-spacing: -0.3px;
+  position: relative;
+}
+
+main .filter-container .selected-btn button span {
+  width: 2rem;
+  background: #5ba4a4;
+  padding: 1rem 0.9rem;
+  position: relative;
+  right: 0;
+  margin-left: 0.5rem;
+}
+
+main .filter-container .selected-btn button span img {
+  position: relative;
+  top: 0.2rem;
+  bottom: 0;
+}
+
+main .filter-container .clear {
+  position: absolute;
+  right: 2.5rem;
+  color: #7b8e8e;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin: auto;
+  margin-bottom: 1.4rem;
+  letter-spacing: -0.2px;
+}
+
 main ul.jobs {
   padding: 6.1rem 2.4rem 0.01rem 2.4rem;
 }
