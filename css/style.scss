@@ -126,6 +126,14 @@ main{
       height: 25.7rem;
       border-radius: 0.5rem;
       box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
+      
+      &.non-active{
+        display: none;
+      }
+
+      &.active{
+        display: block;
+      }
 
       &:last-child{
         margin-bottom: 3.35rem;

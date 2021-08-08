@@ -128,6 +128,14 @@ main ul.jobs li.job {
           box-shadow: 0rem 1.2rem 1.6rem 0 #d7e9ec;
 }
 
+main ul.jobs li.job.non-active {
+  display: none;
+}
+
+main ul.jobs li.job.active {
+  display: block;
+}
+
 main ul.jobs li.job:last-child {
   margin-bottom: 3.35rem;
 }
