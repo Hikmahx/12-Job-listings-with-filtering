@@ -48,4 +48,58 @@ class UI{
       jobList.innerHTML += output;
     });
   }
+
+
+  filterSelection(){
+
+    // CODE FOR ALL BUTTON VALUES
+    let buttons = document.querySelectorAll('.filter button');
+
+    // ARRAY for ALL BUTTON VALUES PRESENT IN FILTER DIV
+    let btnValues = []; 
+
+    buttons.forEach(btn=> {
+      let btnValue = btn.innerText; 
+      btnValues.push(btnValue); 
+    })
+
+    // let filteredBtn = btnValues.filter(btnValue=>btnValue ==='Frontend');
+    // console.log(filteredBtn)
+
+    buttons.forEach(clickBtn=>{
+      clickBtn.addEventListener('click', (e)=>{
+        // let filteredBtn = btnValues.filter(btnValue=>btnValue ===clickBtn.innerText);
+        // console.log(filteredBtn.length);
+        let clickBtn = e;
+
+        // each li card of clicked btn
+        let li = e.target.parentNode.parentNode;
+
+        // all cards
+        let cards = document.querySelectorAll('.job');
+        cards.forEach(card => {
+
+        // BTNS ARRAY OF EACH CARD
+          let btnArray = card.lastElementChild.innerText.split('\n');
+
+          // let containsClkBtn = btnArray.includes();
+
+          // CHECKING THRU EACH CARD IF IT CONTAIN THE CLICKED BTN
+          if(btnArray.includes(e.target.innerText)){
+            // card.classList.add('active');
+            
+            card.style.display = 'block'
+            console.log(e.target.innerText);
+          }else{
+            card.style.display = 'none'
+            // card.classList.add('non-active');
+            // if(card.classList.contains('active')){
+            //   card.classList.remove('non-active');
+            // }
+          }
+
+        });
+      })
+    })
+  }
 }
