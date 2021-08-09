@@ -113,11 +113,9 @@ class UI{
                 let btnArray = card.lastElementChild.innerText.split('\n');
 
                 // CHECK EACH CARD IF IT CONTAINS EACH OF THE CLICKED BTN
-                if(btnArray.includes(btn.trimEnd())){
-                  card.style.display = 'block'
-                }else{
-                  card.style.display = 'none'
-                }
+                return btnArray.includes(btn.trimEnd())?
+                  card.style.display = 'block': card.style.display = 'none';
+              
               })
             })
           }
