@@ -67,7 +67,7 @@ main .filter-container .selected-btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 7rem;
+  margin-right: 5rem;
   overflow: hidden;
 }
 
@@ -105,6 +105,7 @@ main .filter-container .selected-btn button span img {
 main .filter-container .clear {
   position: absolute;
   right: 2.5rem;
+  top: 45%;
   color: #7b8e8e;
   font-weight: 700;
   font-size: 1.3rem;
