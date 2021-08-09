@@ -77,6 +77,22 @@ class UI{
 
         // all cards
         let cards = document.querySelectorAll('.job');
+        
+        // CLICKED BTN DISPLAY IN FITLERED DIV
+        let filterContainer = document.querySelector('.filter-container');
+        let selectedBtnDiv = document.querySelector('.selected-btn');
+        let btnOutput = '';
+        filterContainer.style.display = 'block';
+
+        btnOutput += `
+        <button>
+          ${e.target.innerText}
+          <span><img src="./images/icon-remove.svg" alt=""></span>
+        </button>
+        `;
+
+        selectedBtnDiv.innerHTML += btnOutput;
+
         cards.forEach(card => {
 
         // BTNS ARRAY OF EACH CARD
