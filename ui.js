@@ -86,35 +86,41 @@ class UI{
 
         btnOutput += `
         <button>
-          ${e.target.innerText}
+          ${e.target.innerText.trimEnd()}
           <span><img src="./images/icon-remove.svg" alt=""></span>
         </button>
         `;
 
         selectedBtnDiv.innerHTML += btnOutput;
 
-        cards.forEach(card => {
+          fltrBtnArray();
 
-        // BTNS ARRAY OF EACH CARD
-          let btnArray = card.lastElementChild.innerText.split('\n');
 
-          // let containsClkBtn = btnArray.includes();
 
-          // CHECKING THRU EACH CARD IF IT CONTAIN THE CLICKED BTN
-          if(btnArray.includes(e.target.innerText)){
-            // card.classList.add('active');
+          function fltrBtnArray() {
+            let fltrBtns = document.querySelectorAll('.selected-btn button');
+            let fltrArray = []; 
+
+            // ADD EACH OF THE FILTERED BTN INTO AN ARRAY
+            fltrBtns.forEach(fltrBtn=>{
+              fltrArray.push(fltrBtn.innerText);
+            })
+
             
-            card.style.display = 'block'
-            console.log(e.target.innerText);
-          }else{
-            card.style.display = 'none'
-            // card.classList.add('non-active');
-            // if(card.classList.contains('active')){
-            //   card.classList.remove('non-active');
-            // }
-          }
+            fltrArray.forEach(btn=>{
+              cards.forEach(card=>{
+                // BTNS ARRAY OF EACH CARD
+                let btnArray = card.lastElementChild.innerText.split('\n');
 
-        });
+                // CHECK EACH CARD IF IT CONTAINS EACH OF THE CLICKED BTN
+                if(btnArray.includes(btn.trimEnd())){
+                  card.style.display = 'block'
+                }else{
+                  card.style.display = 'none'
+                }
+              })
+            })
+          }
       })
     })
   }
