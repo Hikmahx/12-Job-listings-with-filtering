@@ -106,6 +106,18 @@ class UI{
               fltrArray.push(fltrBtn.innerText);
             })
 
+            // REMOVES THE FILTER BTN IF CANCEL ON IT IS CLICKED
+            fltrBtns.forEach(btn=>{
+              btn.addEventListener('click', (e)=>{
+                // let selectedBtnContainer = document.querySelectorAll('.selected-btn');
+                let btnIndex = fltrArray.indexOf(btn.innerText);
+                  // console.log(`"${btn.innerText}"`)  //eg "Frontend "
+                if(e.target === btn.firstElementChild.firstElementChild){
+                  fltrArray.splice(btnIndex);
+                  e.target.parentNode.parentNode.remove();
+                }
+              })
+            })
             
             fltrArray.forEach(btn=>{
               cards.forEach(card=>{
