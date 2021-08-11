@@ -132,6 +132,7 @@ class UI{
 
 
   refilterCards(){
+    let filterContainer = document.querySelector('.filter-container');
     let selectedBtnContainer = document.querySelector('.selected-btn');
     let selectedBtns = document.querySelectorAll('.selected-btn button');
     let cards = document.querySelectorAll('.job');
@@ -169,6 +170,14 @@ class UI{
         }
 
       })
+
+      // REMOVE FILTER CONTAINER IF EMPTY & DISPLAY ALL CARDS
+      if(selectBtnArray.length=== 0){
+        filterContainer.style.display = 'none';
+        cards.forEach(card=>{
+          card.style.display = '';
+        })
+      }
     })
   }
 }
