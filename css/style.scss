@@ -256,3 +256,12 @@ main{
     }
   }
 }
+
+@media(min-width:380px){
+  header{
+    .mobile{
+      object-fit: fill;
+      height: 27vh;
+    }
+  }
+}

@@ -273,4 +273,12 @@ main ul.jobs li.job .filter button {
   letter-spacing: -0.3px;
   border-radius: 0.3rem;
 }
+
+@media (min-width: 380px) {
+  header .mobile {
+    -o-object-fit: fill;
+       object-fit: fill;
+    height: 27vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
