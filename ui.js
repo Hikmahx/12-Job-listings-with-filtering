@@ -63,17 +63,9 @@ class UI{
       btnValues.push(btnValue); 
     })
 
-    // let filteredBtn = btnValues.filter(btnValue=>btnValue ==='Frontend');
-    // console.log(filteredBtn)
-
     buttons.forEach(clickBtn=>{
       clickBtn.addEventListener('click', (e)=>{
-        // let filteredBtn = btnValues.filter(btnValue=>btnValue ===clickBtn.innerText);
-        // console.log(filteredBtn.length);
         let clickBtn = e;
-
-        // each li card of clicked btn
-        let li = e.target.parentNode.parentNode;
 
         // all cards
         let cards = document.querySelectorAll('.job');
@@ -131,6 +123,47 @@ class UI{
               })
             })
           }
+      })
+    })
+  }
+
+  refilterCards(){
+    let selectedBtnContainer = document.querySelector('.selected-btn');
+    let selectedBtns = document.querySelectorAll('.selected-btn button');
+    let cards = document.querySelectorAll('.job');
+
+    selectedBtnContainer.addEventListener('click', (e)=>{
+      selectedBtns = selectedBtnContainer.childNodes;
+      let selectBtnArray = [];
+
+      selectedBtns.forEach(btn=>{
+        // IF ITS A BUTTON
+        if(btn.nodeType == 1){
+
+          // ADD BTN TO AN ARRAY
+          selectBtnArray.push(btn.innerText.trimEnd());
+
+          // SHOW ALL CARDS
+          cards.forEach(card=>{
+            card.style.display = 'block';
+          })
+          
+          // EACH BTN IN ARRAY 
+          selectBtnArray.forEach(btn=>{
+
+            cards.forEach(card=>{
+
+              // CREATE ARRAY OF CARD'S BTNS
+              let btnArray = card.lastElementChild.innerText.split('\n');
+  
+              // CHECK EACH CARD IF IT CONTAINS EACH OF THE FILTER BTN
+              return btnArray.includes(btn.trimEnd())?
+                card.style.display = 'block': card.style.display = 'none';
+  
+            })
+          })
+        }
+
       })
     })
   }

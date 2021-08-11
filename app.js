@@ -8,4 +8,5 @@ dataJson.getData()
 .then(data=>{
     ui.showList(data);
     ui.filterSelection();
+    ui.refilterCards();
 })
