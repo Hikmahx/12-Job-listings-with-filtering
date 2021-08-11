@@ -97,18 +97,6 @@ class UI{
             fltrBtns.forEach(fltrBtn=>{
               fltrArray.push(fltrBtn.innerText);
             })
-
-            // REMOVES THE FILTER BTN IF CANCEL ON IT IS CLICKED
-            fltrBtns.forEach(btn=>{
-              btn.addEventListener('click', (e)=>{
-
-                let btnIndex = fltrArray.indexOf(btn.innerText);
-                if(e.target === btn.firstElementChild.firstElementChild){
-                  fltrArray.splice(btnIndex);
-                  e.target.parentNode.parentNode.remove();
-                }
-              })
-            })
             
             fltrArray.forEach(btn=>{
               cards.forEach(card=>{
@@ -121,12 +109,28 @@ class UI{
               
               })
             })
+
+            cancelBtn();
+            
+            // REMOVES THE FILTER BTN IF CANCEL ON IT IS CLICKED
+            function cancelBtn(){
+              fltrBtns.forEach(btn=>{
+                btn.addEventListener('click', (e)=>{
+  
+                  let btnIndex = fltrArray.indexOf(btn.innerText);
+                  if(e.target === btn.firstElementChild.firstElementChild){
+                    fltrArray.splice(btnIndex);
+                    e.target.parentNode.parentNode.remove();
+                  }
+                })
+              })
+            }
           }
       })
     })
   }
 
-  
+
   refilterCards(){
     let selectedBtnContainer = document.querySelector('.selected-btn');
     let selectedBtns = document.querySelectorAll('.selected-btn button');
