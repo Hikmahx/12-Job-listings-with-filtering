@@ -100,6 +100,8 @@ class UI{
 
             // REMOVE ALL DUPLICATED BTNS
             fltrArray.forEach(btn=>{
+
+              // if the 1st index of the btn isnt its last index
               if (fltrArray.indexOf(btn)!==fltrArray.lastIndexOf(btn)){
                 fltrBtns[fltrArray.lastIndexOf(btn)].remove()
               }
