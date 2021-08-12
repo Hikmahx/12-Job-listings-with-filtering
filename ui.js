@@ -114,7 +114,7 @@ class UI{
 
                 // CHECK EACH CARD IF IT CONTAINS EACH OF THE CLICKED BTN
                 return btnArray.includes(btn.trimEnd())?
-                  card.style.display = 'block': card.style.display = 'none';
+                  card.style.display = '': card.style.display = 'none';
               
               })
             })
@@ -159,7 +159,7 @@ class UI{
 
           // SHOW ALL CARDS
           cards.forEach(card=>{
-            card.style.display = 'block';
+            card.style.display = '';
           })
           
           // EACH BTN IN ARRAY 
@@ -172,7 +172,7 @@ class UI{
   
               // CHECK EACH CARD IF IT CONTAINS EACH OF THE FILTER BTN
               return btnArray.includes(btn.trimEnd())?
-                card.style.display = 'block': card.style.display = 'none';
+                card.style.display = '': card.style.display = 'none';
   
             })
           })
@@ -195,7 +195,7 @@ class UI{
         selectedBtnContainer.childNodes.forEach(btn=>{
           if(btn.nodeType ===1){
             btn.remove();
-            cards.forEach(card=>card.style.display = 'block');
+            cards.forEach(card=>card.style.display = '');
             filterContainer.style.display = 'none';
           }
         })
