@@ -179,5 +179,21 @@ class UI{
         })
       }
     })
+
+    // EVENT LISTENER FOR CLEAR ALL
+    filterContainer.addEventListener('click', (e)=>{
+      if(e.target === document.querySelector('.clear')){
+        // console.log(e.target);
+        let selectBtnArray = [];
+        selectedBtnContainer.childNodes.forEach(btn=>{
+          if(btn.nodeType ===1){
+            console.log(btn);
+            btn.remove();
+            cards.forEach(card=>card.style.display = 'block');
+            filterContainer.style.display = 'none';
+          }
+        })
+      }
+    })
   }
 }
