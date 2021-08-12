@@ -97,7 +97,14 @@ class UI{
             fltrBtns.forEach(fltrBtn=>{
               fltrArray.push(fltrBtn.innerText);
             })
-            
+
+            // REMOVE ALL DUPLICATED BTNS
+            fltrArray.forEach(btn=>{
+              if (fltrArray.indexOf(btn)!==fltrArray.lastIndexOf(btn)){
+                fltrBtns[fltrArray.lastIndexOf(btn)].remove()
+              }
+            })
+
             fltrArray.forEach(btn=>{
               cards.forEach(card=>{
                 // BTNS ARRAY OF EACH CARD
