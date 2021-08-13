@@ -295,3 +295,73 @@ main{
     }
   }
 }
+
+@media (min-width:1000px){
+  main{
+    .filter-container{
+      margin: 0 10.4%;
+    }
+    ul.jobs{
+      margin: 0 8%;
+      li.job{
+        height: fit-content;
+        display: grid;
+        // grid-template-columns: 10% 40% 50%;
+        grid-template-columns: 9% 36% 55%;
+        grid-template-rows: repeat(5, 20%);
+        // gap: 1rem 0;
+        height: 16rem;
+
+        img{
+          top: -1.7rem;
+          grid-row: 3;
+          width:6rem;
+          height: 6rem;
+        }
+
+        .company{
+          grid-row: 2/4;
+          grid-column: 2;
+          height: fit-content;
+          align-items: baseline;
+          margin-top: -0.5rem;
+
+          h4{
+          }
+
+          span{
+            
+          }
+        }
+
+        h2{
+          grid-row: 3/4;
+          grid-column: 2;
+          margin-top: 0.5rem;
+        }
+
+        .details{
+          grid-row: 4;
+          grid-column: 2;
+          border: none;
+          margin-top: 1.3rem;
+
+          span{
+
+          }
+        }
+
+        .filter{
+          grid-row: 3;
+          grid-column: 3;
+          // flex-wrap: nowrap;
+          margin-top: -0.3rem;
+
+          button{
+
+          }
+        }
+      }
+    }
+  }
+}
