@@ -298,8 +298,12 @@ main{
 
 @media (min-width:1000px){
   main{
+    padding-bottom: 4rem;
+
     .filter-container{
       margin: 0 10.4%;
+      position: relative;
+      top: -3.8rem;
     }
     ul.jobs{
       margin: 0 8%;
@@ -356,6 +360,7 @@ main{
           grid-column: 3;
           // flex-wrap: nowrap;
           margin-top: -0.3rem;
+          justify-content: flex-end;
 
           button{
 
@@ -363,5 +368,9 @@ main{
         }
       }
     }
+  }
+
+  .attribution{
+    padding-bottom: 2rem;
   }
 }

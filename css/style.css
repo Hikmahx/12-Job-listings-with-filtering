@@ -308,8 +308,13 @@ main ul.jobs li.job .filter button {
 }
 
 @media (min-width: 1000px) {
+  main {
+    padding-bottom: 4rem;
+  }
   main .filter-container {
     margin: 0 10.4%;
+    position: relative;
+    top: -3.8rem;
   }
   main ul.jobs {
     margin: 0 8%;
@@ -369,6 +374,12 @@ main ul.jobs li.job .filter button {
     -ms-grid-column: 3;
     grid-column: 3;
     margin-top: -0.3rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .attribution {
+    padding-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
