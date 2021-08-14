@@ -100,6 +100,13 @@ main .filter-container .selected-btn button span {
   margin-left: 0.5rem;
 }
 
+main .filter-container .selected-btn button span:hover {
+  cursor: pointer;
+  background: #2c3a3a;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 main .filter-container .selected-btn button span img {
   position: relative;
   top: 0.2rem;
@@ -116,6 +123,23 @@ main .filter-container .clear {
   margin: auto;
   margin-bottom: 1.4rem;
   letter-spacing: -0.2px;
+}
+
+main .filter-container .clear:hover {
+  cursor: pointer;
+  color: #5ba4a4;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+main .filter-container .clear:hover::after {
+  content: '';
+  position: absolute;
+  background-color: #5ba4a4;
+  height: 0.1rem;
+  bottom: 0rem;
+  left: 0rem;
+  right: 0rem;
 }
 
 main ul.jobs {
@@ -230,6 +254,13 @@ main ul.jobs li.job h2 {
   margin-top: 1.2rem;
 }
 
+main ul.jobs li.job h2:hover {
+  cursor: pointer;
+  color: #5ba4a4;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
 main ul.jobs li.job .details {
   margin-top: 1.6rem;
   padding-bottom: 1.85rem;
@@ -276,6 +307,14 @@ main ul.jobs li.job .filter button {
   text-align: center;
   letter-spacing: -0.3px;
   border-radius: 0.3rem;
+}
+
+main ul.jobs li.job .filter button:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #5ba4a4;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 @media (min-width: 380px) {

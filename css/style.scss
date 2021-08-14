@@ -85,6 +85,7 @@ main{
         letter-spacing: -0.3px;
         position: relative;
 
+        
         span{
           // height: 3.2rem;
           // position: absolute;
@@ -96,6 +97,12 @@ main{
           right: 0;
           margin-left: 0.5rem;
 
+          &:hover{
+            cursor: pointer;
+            background: $very-dark-grayish-cyan;
+            transition: 0.2s ease-in-out;
+          }
+          
           img{
             position: relative;
             top: 0.2rem;
@@ -117,6 +124,23 @@ main{
       margin: auto;
       margin-bottom: 1.4rem;
       letter-spacing: -0.2px;
+
+      &:hover{
+        cursor: pointer;
+        color: $dark-cyan;
+        transition: 0.2s ease;
+
+
+        &::after{
+          content: '';
+          position: absolute;
+          background-color: $dark-cyan;
+          height: 0.1rem;
+          bottom: 0rem;
+          left: 0rem;
+          right: 0rem;
+        }
+      }
     }
   }
 
@@ -207,6 +231,12 @@ main{
 
       h2{
         margin-top: 1.2rem;
+
+        &:hover{
+          cursor: pointer;
+          color: $dark-cyan;
+          transition: 0.2s ease-in;
+        }
       }
 
       .details{
@@ -255,6 +285,13 @@ main{
           text-align: center;
           letter-spacing: -0.3px;
           border-radius: 0.3rem;
+
+          &:hover{
+            cursor: pointer;
+            color: #fff;
+            background: $dark-cyan;
+            transition: 0.2s ease-in-out;
+          }
         }
       }
     }
