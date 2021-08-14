@@ -14,6 +14,10 @@ html {
   font-family: 'Spartan', sans-serif;
 }
 
+body {
+  background: #effafa;
+}
+
 header {
   height: 27vh;
 }

@@ -21,6 +21,10 @@ html{
   font-family: 'Spartan', sans-serif;
 }
 
+body{
+  background: $grayish-cyan-bg;
+}
+
 @mixin flexCenter($direction) {
   display: flex;
   align-items: center;
