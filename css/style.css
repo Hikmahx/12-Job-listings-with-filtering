@@ -422,6 +422,17 @@ main ul.jobs li.job .filter button:hover {
             justify-content: flex-end;
   }
   .attribution {
+    position: absolute;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    bottom: 0.6rem;
+    left: 0;
+    right: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    margin: auto;
     padding-bottom: 2rem;
   }
 }
