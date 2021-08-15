@@ -96,6 +96,8 @@ main .filter-container .selected-btn button {
   border-radius: 0.3rem;
   overflow: hidden;
   background: #eef6f6;
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #eef6f6), color-stop(80%, #5ba4a4));
+  background: linear-gradient(90deg, #eef6f6 80%, #5ba4a4 80%);
   font-family: 'Spartan', sans-serif;
   font-weight: 700;
   color: #5ba4a4;
