@@ -23,7 +23,6 @@ body .attribution {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  bottom: 0.6rem;
   left: 0;
   right: 0;
   width: -webkit-max-content;
@@ -86,6 +85,7 @@ main .filter-container .selected-btn {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  margin-right: 5rem;
   overflow: hidden;
 }
 
@@ -111,7 +111,6 @@ main .filter-container .selected-btn button span {
   padding: 1rem 0.9rem;
   position: relative;
   right: 0;
-  margin-left: 0.5rem;
 }
 
 main .filter-container .selected-btn button span:hover {
