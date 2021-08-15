@@ -201,7 +201,7 @@ main{
         // margin-top: -0.45rem;
         // margin-top: 0.02rem;
 
-        h4{
+        h2{
           color: $dark-cyan;
           font-size: 1.3rem;
           margin-right: 1.35rem;
@@ -229,7 +229,7 @@ main{
         }
       }
 
-      h2{
+      h3{
         margin-top: 1.2rem;
 
         &:hover{
@@ -371,7 +371,7 @@ main{
           align-items: baseline;
           margin-top: -0.5rem;
 
-          h4{
+          h2{
           }
 
           span{
@@ -379,7 +379,7 @@ main{
           }
         }
 
-        h2{
+        h3{
           grid-row: 3/4;
           grid-column: 2;
           margin-top: 0.5rem;
@@ -461,13 +461,13 @@ main{
         .company{
           margin-top: -1.7rem;
 
-          h4{
+          h2{
             font-size: 1.4rem;
           }
 
         }
 
-        h2{
+        h3{
           font-size: 1.8rem;
           margin-top: 0.3rem;
         }

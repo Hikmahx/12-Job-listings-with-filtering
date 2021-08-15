@@ -23,11 +23,11 @@ class UI{
       <li class="job${job.featured  ===true? ' cyan-border': ''}">
       <img src="./${job.logo}" alt="banner">
       <div class="company">
-      <h4>${job.company}</h4>
+      <h2>${job.company}</h2>
       <span class=${job.new === true? 'cyan': ''}>${job.new === true? 'New!': ''}</span>
       <span class=${job.featured === true? 'black': ''}>${job.featured === true? 'Featured': ''}</span>
       </div>
-      <h2>${job.position}</h2>
+      <h3>${job.position}</h3>
       <div class="details">
         <span>${job.postedAt}</span>
         <span>${job.contract}</span>

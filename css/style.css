@@ -211,7 +211,7 @@ main ul.jobs li.job .company {
           justify-content: left;
 }
 
-main ul.jobs li.job .company h4 {
+main ul.jobs li.job .company h2 {
   color: #5ba4a4;
   font-size: 1.3rem;
   margin-right: 1.35rem;
@@ -250,11 +250,11 @@ main ul.jobs li.job .company .black {
   background: #2c3a3a;
 }
 
-main ul.jobs li.job h2 {
+main ul.jobs li.job h3 {
   margin-top: 1.2rem;
 }
 
-main ul.jobs li.job h2:hover {
+main ul.jobs li.job h3:hover {
   cursor: pointer;
   color: #5ba4a4;
   -webkit-transition: 0.2s ease-in;
@@ -395,7 +395,7 @@ main ul.jobs li.job .filter button:hover {
             align-items: baseline;
     margin-top: -0.5rem;
   }
-  main ul.jobs li.job h2 {
+  main ul.jobs li.job h3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -466,10 +466,10 @@ main ul.jobs li.job .filter button:hover {
   main ul.jobs li.job .company {
     margin-top: -1.7rem;
   }
-  main ul.jobs li.job .company h4 {
+  main ul.jobs li.job .company h2 {
     font-size: 1.4rem;
   }
-  main ul.jobs li.job h2 {
+  main ul.jobs li.job h3 {
     font-size: 1.8rem;
     margin-top: 0.3rem;
   }
