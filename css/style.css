@@ -364,7 +364,7 @@ main ul.jobs li.job .filter button:hover {
 
 @media (min-width: 600px) {
   header {
-    height: 15.4vh;
+    height: 15.6rem;
   }
   header .mobile {
     display: none;
@@ -372,7 +372,7 @@ main ul.jobs li.job .filter button:hover {
   header .desktop {
     display: block;
     width: 100%;
-    height: 15.4vh;
+    height: 15.6rem;
     background: #5ba4a4;
   }
   main .filter-container {
@@ -483,10 +483,10 @@ main ul.jobs li.job .filter button:hover {
   main ul.jobs {
     margin: 0 4.4rem;
     padding-top: 7.4rem;
-    padding-bottom: 8.7rem;
+    padding-bottom: 4.65rem;
   }
   main ul.jobs li.job {
-    height: 15.2rem;
+    height: 15.3rem;
     margin-bottom: 2.4rem;
     max-width: none;
     padding: 1.9rem 4rem;
@@ -505,7 +505,7 @@ main ul.jobs li.job .filter button:hover {
   }
   main ul.jobs li.job h3 {
     font-size: 1.8rem;
-    margin-top: 0.3rem;
+    margin-top: 0.4rem;
   }
   main ul.jobs li.job .details {
     margin-top: 1.5rem;
